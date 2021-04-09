@@ -11,6 +11,12 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 .menu__button {
   margin-right: 28px;
@@ -87,6 +93,19 @@ body {
 }
 .sidebar {
   padding-left: 32px;
+  position: fixed;
+  left: 0;
+  top: 114px;
+  height: calc(100% - 114px);
+  overflow-y: auto;
+  width: 13%;
+  background: #fff;
+}
+.content {
+  margin-top: 85px;
+  padding-left: 13%;
+  padding-top: 30px;
+  margin-left: 35px;
 }
 .navigation__menu {
   margin-top: 0;
@@ -127,4 +146,134 @@ body {
   font-size: 18px;
   line-height: 23px;
   margin-bottom: 30px;
+}
+.channel {
+  position: relative;
+  margin-top: 49px;
+}
+.channel__title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #19202c;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+.channel__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.channel__text {
+  margin-left: 20px;
+}
+.video__card {
+  width: 250px;
+}
+.video__thumbnail {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.thumdnail {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+.video__duration {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #fff;
+  padding: 3px 9px;
+}
+.video__title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.video__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.video__counter {
+  display: flex;
+}
+.video__views {
+  margin-right: 5px;
+}
+.video__views:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.channel-button {
+  cursor: pointer;
+}
+.slider__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
+  position: absolute;
+  right: 9%;
+  top: 15px;
+}
+.recommended_card {
+  width: 540px;
+}
+.recommended_thumdnail {
+  width: 540px;
+  height: 250px;
+  object-fit: cover;
+}
+.video__recommended {
+  width: 540px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 14px;
+  position: relative;
+}
+.messange {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+  margin-left: 19px;
+  padding-top: 5px;
+}
+.subscribe_button {
+  background-color: #ff0000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 19.5px 10px 20.5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 255px;
+  top: 10px;
+}
+.subscribe_button:focus {
+  background: #c2c2c2;
+  color: #fff;
 }
